@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sistema-edu"
+version = "0.1.0"
+description = "ERP educacional"
+authors = ["Awrrin <clebersonezb@gmail.com>"]
+license = "2024"
+readme = "README.md"
+packages = [{include = "sistema_edu"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
