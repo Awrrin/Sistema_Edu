@@ -3,5 +3,6 @@ from .models import Todo
 
 
 def todo_list(request):
-    todos = Todo
-    return render(request, "todos/todo_list.html", {"todos": todos})
+    pedidos = Todo.objects.all()
+    return render(request, "todos/todo_list.html", {"pedidos": pedidos})
+ 
