@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from .models import Todo
+from .models import Pedidos
 
 
 def todo_list(request):
-    pedidos = Todo.objects.all()
-    return render(request, "todos/todo_list.html", {"pedidos": pedidos})
+    pedidos = Pedidos.objects.all()
+    return render(request, "todos/todos_lista.html", {"pedidos": pedidos})
  

@@ -68,6 +68,9 @@
                     <th scope="col">Criado em</th>
                     <th scope="col">Estimativa de entrega</th>
                     <th scope="col">Finalizado em</th>
+                    <th scope="col">Observação</th>
+                    <th scope="col">Ações</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -78,6 +81,11 @@
                         <td>{{todo.created_at}}</td>
                         <td>{{todo.deadline| default:"-"}}</td>
                         <td>{{todo.finished_at| default:"-"}}</td>
+                        <td>{{todo.obser| default:"-"}}</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Editar</a>
+                            <a href="#" class="btn btn-info">Comentar</a>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
