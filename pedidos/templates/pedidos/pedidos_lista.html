@@ -74,14 +74,14 @@
                 </tr>
             </thead>
             <tbody>
-                {% for todo in pedidos %}
+                {% for pedidos in pedidos %}
                     <tr>
-                        <th scope="row">{{ todo.pk}}</th>
-                        <td>{{todo.title}}</td>
-                        <td>{{todo.created_at}}</td>
-                        <td>{{todo.deadline| default:"-"}}</td>
-                        <td>{{todo.finished_at| default:"-"}}</td>
-                        <td>{{todo.obser| default:"-"}}</td>
+                        <th scope="row">{{ pedido.pk}}</th>
+                        <td>{{pedido.title}}</td>
+                        <td>{{pedido.created_at}}</td>
+                        <td>{{pedido.deadline| default:"-"}}</td>
+                        <td>{{pedido.finished_at| default:"-"}}</td>
+                        <td>{{pedido.obser| default:"-"}}</td>
                         <td>
                             <a href="#" class="btn btn-primary">Editar</a>
                             <a href="#" class="btn btn-info">Comentar</a>
