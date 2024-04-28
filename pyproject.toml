@@ -1,4 +1,4 @@
-git [tool.poetry]
+
 name = "estoque"
 version = "0.1.0"
 description = "Controle de estoque"
